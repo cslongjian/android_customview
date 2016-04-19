@@ -8,8 +8,19 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.chenlong.clog.MainActivity">
+    
+    <com.chenlong.clog.widget.LineView
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="100dp"
+        android:background="@android:color/holo_blue_light"
+        />
 
-    <TextView
+
+    <Button
+        android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
