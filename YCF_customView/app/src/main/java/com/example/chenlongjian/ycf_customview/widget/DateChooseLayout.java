@@ -78,9 +78,9 @@ public class DateChooseLayout extends HorizontalScrollView {
         initLayout();
     }
 
-    public void initLayout()
+    private void initLayout()
     {
-        inflate(getContext(), R.layout.layout_datechoose, this);
+        View.inflate(getContext(), R.layout.layout_datechoose, this);
         mChooseDateTxt = (TextView) findViewById(R.id.txt_choose_date);
         mDateGroup = (RadioGroup) findViewById(R.id.group_date);
         mCurrentCalendar = DataUtil.getCalendarInstance(Calendar.getInstance(Locale.CHINA));
@@ -94,6 +94,8 @@ public class DateChooseLayout extends HorizontalScrollView {
         initDateWithStartDate(mCurrentCalendar);
         initDateData();
         initChooseView();
+
+
     }
 
     public void initDateWithStartDate(Calendar startDate)

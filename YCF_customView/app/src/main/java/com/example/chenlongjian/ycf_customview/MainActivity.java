@@ -9,15 +9,14 @@ import com.example.chenlongjian.ycf_customview.widget.DateChooseLayout;
 public class MainActivity extends AppCompatActivity implements DateChooseLayout.OnItemChooseListener {
 
     private DateChooseLayout dateChooseLayout;
-    private View view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        dateChooseLayout = (DateChooseLayout)findViewById(R.id.choose_date);
-        dateChooseLayout.setOnItemChooseListener(this);
-        dateChooseLayout.setSaveChooseFlag(true);
+//        dateChooseLayout = (DateChooseLayout)findViewById(R.id.choose_date);
+//        dateChooseLayout.setOnItemChooseListener(this);
+//        dateChooseLayout.setSaveChooseFlag(true);
     }
 
     @Override

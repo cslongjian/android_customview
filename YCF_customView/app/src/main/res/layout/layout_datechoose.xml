@@ -4,11 +4,6 @@
     android:layout_height="wrap_content"
     android:orientation="horizontal"
     android:gravity="center_vertical"
-    android:background="@drawable/detail_date_tab_bg"
-    android:paddingLeft="@dimen/normal_dp5"
-    android:paddingRight="@dimen/normal_dp5"
-    android:paddingTop="@dimen/normal_dp5"
-    android:paddingBottom="@dimen/normal_dp9"
     >
     <RadioGroup
         android:id="@+id/group_date"
