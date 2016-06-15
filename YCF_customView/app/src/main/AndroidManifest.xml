@@ -18,7 +18,14 @@
 
         <activity android:name=".DialogActivity"
             android:theme="@style/MyDialogStyleBottom">
+        </activity>
 
+        <activity android:name=".Demo5_24Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+        <activity android:name=".Demo5_24PrepaidCardlistActivity"
+            android:theme="@style/MyDialogStyleBottom">
         </activity>
     </application>
 

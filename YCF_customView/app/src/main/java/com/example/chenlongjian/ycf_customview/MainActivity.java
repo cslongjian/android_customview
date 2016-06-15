@@ -14,6 +14,9 @@ public class MainActivity extends AppCompatActivity implements DateChooseLayout.
 
     private Button mBtn;
 
+    private Button mBtn2;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,15 @@ public class MainActivity extends AppCompatActivity implements DateChooseLayout.
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getBaseContext(),DialogActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        mBtn2 = (Button) findViewById(R.id.btn2);
+        mBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getBaseContext(),Demo5_24Activity.class);
                 startActivity(intent);
             }
         });

@@ -6,11 +6,26 @@
     tools:context="com.example.chenlongjian.ycf_customview.MainActivity">
 
 
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="弹出滑动出现的ACtivity"/>
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="弹出滑动出现的ACtivity"/>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5_24demo"/>
+
+    </LinearLayout>
+
+
     <TextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
@@ -43,9 +58,9 @@
 
     </LinearLayout>
 
-    <com.example.chenlongjian.ycf_customview.widget.AnimationLayout
-        android:layout_below="@+id/line1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+    <!--<com.example.chenlongjian.ycf_customview.widget.AnimationLayout-->
+        <!--android:layout_below="@+id/line1"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
 </RelativeLayout>
