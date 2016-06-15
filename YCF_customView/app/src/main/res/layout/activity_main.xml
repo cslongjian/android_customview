@@ -5,6 +5,12 @@
     android:layout_height="match_parent"
     tools:context="com.example.chenlongjian.ycf_customview.MainActivity">
 
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="弹出滑动出现的ACtivity"/>
     <TextView
         android:id="@+id/text"
         android:layout_width="wrap_content"
