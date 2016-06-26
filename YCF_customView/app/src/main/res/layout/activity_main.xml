@@ -26,11 +26,16 @@
     </LinearLayout>
 
 
-    <TextView
+    <Button
+        android:layout_marginTop="30dp"
         android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:textColor="#f8881a"
+        android:textSize="25sp"
         android:text="Hello World!" />
+
+    <!--android:textColor="#f8881a"-->
 
     <LinearLayout
         android:id="@+id/line1"
@@ -50,10 +55,12 @@
             android:layout_height="wrap_content"
             android:visibility="gone"/>
 
-        <TextView
+        <Button
             android:id="@+id/text2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#7ff8881a"
+            android:textSize="25sp"
             android:text="Hello World!" />
 
     </LinearLayout>
