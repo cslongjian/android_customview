@@ -5,18 +5,19 @@
 
    <LinearLayout
        android:layout_width="match_parent"
-       android:layout_height="wrap_content"
+       android:layout_height="200dp"
+
        android:layout_above="@+id/canclelayout">
 
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+
        <ListView
            android:id="@+id/listview"
            android:layout_width="match_parent"
-           android:layout_height="wrap_content"
+           android:layout_height="200dp"
+           android:background="#ffffff"
+           android:listSelector="#f5f7f7"
            android:layout_marginBottom="15dp"/>
-</ScrollView>
+
 
    </LinearLayout>
 

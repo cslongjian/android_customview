@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity implements DateChooseLayout.
     private Button text2; //半透明测试
 
     private boolean mCheck; //标记
-    
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
