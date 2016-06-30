@@ -32,6 +32,12 @@
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
 
+        <activity android:name=".widget_ycf.rollbanner.RollBannerActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
+
+
     </application>
 
 </manifest>

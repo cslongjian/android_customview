@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--ViewPager指示器控件属性-->
+    <declare-styleable name="ViewPagerIndicator">
+        <attr name="circlespace" format="dimension" />
+    </declare-styleable>
+
+
+</resources>

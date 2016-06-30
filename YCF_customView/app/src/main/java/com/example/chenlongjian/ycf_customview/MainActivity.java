@@ -1,5 +1,6 @@
 package com.example.chenlongjian.ycf_customview;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.widget.Button;
 
 import com.example.chenlongjian.ycf_customview.demand5_24.Demo5_24Activity;
 import com.example.chenlongjian.ycf_customview.widget.DateChooseLayout;
+import com.example.chenlongjian.ycf_customview.widget_ycf.rollbanner.RollBannerActivity;
 
 public class MainActivity extends AppCompatActivity implements DateChooseLayout.OnItemChooseListener {
 
@@ -23,7 +25,6 @@ public class MainActivity extends AppCompatActivity implements DateChooseLayout.
     private Button text2; //半透明测试
 
     private boolean mCheck; //标记
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +60,9 @@ public class MainActivity extends AppCompatActivity implements DateChooseLayout.
         text1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                Intent intent = new Intent(MainActivity.this, RollBannerActivity.class);
+                startActivity(intent);
                 Log.w("半透明测试","当前状态："+mCheck);
                 if (mCheck)
                 {

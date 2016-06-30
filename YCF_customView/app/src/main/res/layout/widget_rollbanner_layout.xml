@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:text="广告轮播组件"/>
+
+    <RelativeLayout
+        android:id="@+id/rollcontainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_banner_img_bg"
+        android:padding="0dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/rollbanner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.example.chenlongjian.ycf_customview.widget_ycf.rollbanner.ViewPagerIndicator
+            android:id="@+id/rollincator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="@dimen/normal_dp12"
+            android:layout_marginRight="@dimen/normal_dp8" />
+
+    </RelativeLayout>
+
+</LinearLayout>
