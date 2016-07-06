@@ -1,6 +1,7 @@
 package com.rxjava.chenlongjian.rxjava_demo;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Looper;
 import android.support.v7.app.AppCompatActivity;
@@ -23,6 +24,7 @@ import rx.schedulers.Schedulers;
 public class MainActivity extends AppCompatActivity {
 
     private Button btn;
+    private Button btn2;
 
     private LogAdapter _adapter;
     private List<String> _logs;
@@ -36,11 +38,22 @@ public class MainActivity extends AppCompatActivity {
 
         _logsList = (ListView)findViewById(R.id.log_list);
 
+
+        btn2 = (Button) findViewById(R.id.btn2);
+        btn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, ObserableMethodActivity.class);
+                startActivity(intent);
+            }
+        });
+
         btn = (Button) findViewById(R.id.btn);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //create method
                 createObserver()
                         .subscribeOn(Schedulers.io())
                         .observeOn(AndroidSchedulers.mainThread())
@@ -64,6 +77,27 @@ public class MainActivity extends AppCompatActivity {
 
                     }
                 });
+
+                //range method
+                rangeObserver().subscribe(new Subscriber<Integer>() {
+                    @Override
+                    public void onCompleted() {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onNext(Integer integer) {
+                        _log("rangeObserver -- onNext"+integer);
+                    }
+                });
+
+                ////
+
             }
         });
 
@@ -95,6 +129,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    private Observable<Integer> rangeObserver()
+    {
+        return Observable.range(100,5);
+    }
+
+
 
 
     private void _log(String logMsg) {
