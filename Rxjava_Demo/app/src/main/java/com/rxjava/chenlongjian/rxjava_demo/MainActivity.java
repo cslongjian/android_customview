@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, ObserableMethodActivity.class);
+                Intent intent = new Intent(MainActivity.this, ObservableMethodActivity.class);
                 startActivity(intent);
             }
         });

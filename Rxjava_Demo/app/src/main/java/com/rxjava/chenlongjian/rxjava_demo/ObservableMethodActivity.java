@@ -2,13 +2,14 @@ package com.rxjava.chenlongjian.rxjava_demo;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+
+import com.rxjava.chenlongjian.rxjava_demo.fragment.MainFragment;
 
 /**
  * Created by chenlongjian on 2016/7/6.
  */
-public class ObserableMethodActivity extends FragmentActivity {
+public class ObservableMethodActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

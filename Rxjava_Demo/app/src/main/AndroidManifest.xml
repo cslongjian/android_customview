@@ -16,7 +16,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ObserableMethodActivity"/>
+        <activity android:name=".ObservableMethodActivity"/>
     </application>
 
 </manifest>
