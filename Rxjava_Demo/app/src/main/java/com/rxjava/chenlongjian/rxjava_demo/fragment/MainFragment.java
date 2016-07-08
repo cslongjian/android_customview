@@ -17,6 +17,7 @@ import com.rxjava.chenlongjian.rxjava_demo.R;
 public class MainFragment extends Fragment implements View.OnClickListener{
 
     private Button mObservable;
+    private Button mObservableTransfrombtn;
 
     @Nullable
     @Override
@@ -33,6 +34,9 @@ public class MainFragment extends Fragment implements View.OnClickListener{
     {
         mObservable = (Button) view.findViewById(R.id.btn_obserable);
         mObservable.setOnClickListener(this);
+
+        mObservableTransfrombtn = (Button) view.findViewById(R.id.btn_obserable_change);
+        mObservableTransfrombtn.setOnClickListener(this);
     }
 
 
@@ -43,6 +47,8 @@ public class MainFragment extends Fragment implements View.OnClickListener{
             case R.id.btn_obserable:
                 clickedOn(new ObservableCreateFragment());
                 break;
+            case R.id.btn_obserable_change:
+                clickedOn(new ObervableTransformingFragment());
             default:
                 break;
         }
