@@ -3,6 +3,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -13,6 +17,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="这个是observable创建样例" />
+
+        <Button
+            android:id="@+id/clearlog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="clearlog"/>
+
 
         <Button
             android:id="@+id/create"
@@ -28,12 +40,57 @@
             android:layout_gravity="center"
             android:text="range"/>
 
+        <Button
+            android:id="@+id/defer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="defer"/>
+
+        <Button
+            android:id="@+id/just"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="just"/>
+
+        <Button
+            android:id="@+id/from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="from"/>
+
+        <Button
+            android:id="@+id/interval"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Interval"/>
+
+        <Button
+            android:id="@+id/repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="repeat"/>
+        <Button
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="time"/>
+
+
 
         <ListView
             android:id="@+id/log_list"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"></ListView>
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
 
     </LinearLayout>
+
+    </ScrollView>
 
 </LinearLayout>
