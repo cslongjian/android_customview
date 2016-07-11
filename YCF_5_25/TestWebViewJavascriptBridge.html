@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript"> var Device = "H", DeviceVersion="1.0.0", DeviceTAB="TabDefault";</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="format-detection" content="telephone=no">
+    
+		<script type="text/javascript">
+        //商户桥返回---begin
+        var default_data = {
+            sign_status: "0"
+        };
+    
+        var connectMerchantJSBridge = function (callback) {
+            try {
+                if (window.WebViewJavascriptBridge) {
+                    callback(WebViewJavascriptBridge);
+                } else {
+                    document.addEventListener("WebViewJavascriptBridgeReady", function () {
+                        callback(WebViewJavascriptBridge);
+                    }, false);
+                }
+            } catch (ex) { }
+        };
+        var cmbMerchantBridge = {
+            initCmbSignNetPay: function (signData) {
+                if (!signData) {
+                    signData = default_data;
+                }
+                connectMerchantJSBridge(function (bridge) {
+                    if (typeof bridge === "undefined") {
+                        return;
+                    }
+                    bridge.callHandler("initCmbSignNetPay", JSON.stringify(signData));
+                });
+            }
+        };
+        window.cmbMerchantBridge = cmbMerchantBridge;
+        //商户桥返回---end
+
+        //0-未签约,1-已签约
+        var signData = {
+            sign_status: "0"
+        };
+
+        cmbMerchantBridge.initCmbSignNetPay(signData);
+
+    </script>
+</head>
+    <body>
+        我是桥测试页面！
+    </body>
+</html>
