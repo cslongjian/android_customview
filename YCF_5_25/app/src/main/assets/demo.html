@@ -18,19 +18,21 @@
 </body>
 <script>
 
-  <!--var aTag = document.getElementsByTagName('p')[0];-->
-    <!--aTag.addEventListener('click', function(){-->
-        <!--//调用android本地方法-->
-		<!--WebViewJavascriptBridge.initCmbSignNetPay("initCmbSignNetPay 方式调用！！");-->
-        <!--return false;-->
-    <!--}, false);-->
+  var aTag = document.getElementsByTagName('p')[0];
+    aTag.addEventListener('click', function(){
+        //调用android本地方法
+		WebViewJavascriptBridge.initCmbSignNetPay("initCmbSignNetPay 方式调用！！");
+        return false;
+    }, false);
 
 
 
         function testClick1() {
             //call native method
-            window.WebViewJavascriptBridge.callHandler(
-                'submitFromWeb', {'param': '测试'});
+            <!--window.WebViewJavascriptBridge.callHandler(-->
+                <!--'submitFromWeb', {'param': '测试'});-->
+                WebViewJavascriptBridge.initCmbSignNetPay("initCmbSignNetPay 方式调用！！");
+
         }
 
 

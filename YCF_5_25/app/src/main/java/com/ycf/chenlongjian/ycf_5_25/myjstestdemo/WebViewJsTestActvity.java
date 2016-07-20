@@ -22,9 +22,13 @@ public class WebViewJsTestActvity extends Activity {
 
     private CMBPayStateCallback cmbPayStateCallback;
 
+    //针对后面开源控件的方法
 //    private String testUrl = "file:///android_asset/TestWebViewJavascriptBridge.html";
 
+    //针对原生方式的使用案例
     private String testUrl = "file:///android_asset/demo.html";
+
+//    两者只有一种可以使用。用了其中一种，另外一种将会失效
 
 
 //    private String testUrl = "file:///android_asset/test.html";
@@ -65,8 +69,8 @@ public class WebViewJsTestActvity extends Activity {
 //        {
 //            public void handler(String paramAnonymousString, CallBackFunction paramAnonymousCallBackFunction)
 //            {
-//                Log.i("hrq-----", "回传结果：" + paramAnonymousString);
-//                Toast.makeText(WebViewJsTestActvity.this, "回传结果：" + paramAnonymousString, Toast.LENGTH_SHORT).show();
+//                Log.i("initCmbSignNetPay-----", "回传结果：---------：" + paramAnonymousString);
+//                Toast.makeText(WebViewJsTestActvity.this, "回传结果：---------:" + paramAnonymousString, Toast.LENGTH_SHORT).show();
 //                if (paramAnonymousCallBackFunction != null)
 //                    paramAnonymousCallBackFunction.onCallBack("测试");
 //            }

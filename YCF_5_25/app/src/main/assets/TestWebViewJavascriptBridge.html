@@ -48,11 +48,17 @@
 
          function testClick1() {
             //call native method
-            window.WebViewJavascriptBridge.callHandler(
-                'submitFromWeb', {'param': '测试'});
 
-                window.WebViewJavascriptBridge.callHandler(
-                'initCmbSignNetPay', {'sign_status':"0"});
+  cmbMerchantBridge.initCmbSignNetPay(signData);
+
+  <!--window.WebViewJavascriptBridge.callHandler(-->
+                <!--'initCmbSignNetPay', {'sign_status':"0"});-->
+
+
+            <!--window.WebViewJavascriptBridge.callHandler(-->
+                <!--'submitFromWeb', {'param': '测试'});-->
+
+
 
         }
 
