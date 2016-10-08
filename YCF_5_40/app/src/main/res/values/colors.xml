@@ -3,4 +3,111 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="dialog_btn_bg_click">#e2e2e2</color>
+    <color name="ycfgreen">#63b84c</color>
+    <color name="gray4">#aaaaaa</color>
+    <color name="gary">#ebeaea</color>
+    <color name="linebg">#e6e6e6</color>
+    <color name="white">#FFFFFF</color>
+    <color name="click_white">#f5f7f7</color>
+    <color name="black">#000000</color>
+    <color name="orange">#FFA500</color>
+    <color name="orange_backgroud">#f8881a</color>
+    <color name="full_transparent">#00000000</color>
+    <color name="half_transparent">#aa000000</color>
+    <color name="current_price_title">#FE6924</color>
+    <color name="backColor">#E9E9E9</color>
+    <color name="book_hotel_background">#EAEAEA</color>
+    <color name="room_click_buttom_selected_background">#e1750b</color>
+    <color name="button_gray_background">#cacaca</color>
+    <color name="button_gray_selected_background">#8b8b8b</color>
+    <color name="list_item_selected_background">#f7f7f7</color>
+    <color name="frame_button_normal_background">#e1e1e1</color>
+    <color name="frame_button_text_normal_background">#7d7d7d</color>
+    <color name="order_grid_view_background">#fef4ea</color>
+    <color name="list_sub_title_text_color">#837B7B7B</color>
+    <color name="gray2">#8e8e93</color>
+    <color name="ftviewtxt">#dee1e5</color>
+    <color name="area_text">#7b7b7b</color>
+    <color name="area_button_bg_selected">#ff881a</color>
+    <color name="dropdowm_bg">#f3f5f6</color>
+    <color name="dialog_text">#7b7b7b</color>
+    <color name="default_gray3">#f8f8f8</color>
+    <color name="dialog_btn_yellow_text">#f8881a</color>
+    <color name="background_color">#f3f5f6</color>
+    <color name="new_detial_color">#848484</color>
+    <color name="detial_item_bg_color">#f7f7f7</color>
+    <color name="near_by_location_bg">#fafafa</color>
+    <color name="default_ui_gay_text">#bfbfbf</color>
+
+
+    <color name="destination_city_color">#8b7a69</color>
+    <color name="red_text_v3p2">#ff4141</color>
+    <color name="gary_bg_v3p4">#d6d6d6</color>
+    <color name="btn_click_bg_cl">#dcdcdc</color>
+    <color name="offer_text_c1">#ff993d</color>
+    <color name="offer_text_c2">#79c46f</color>
+    <color name="offer_text_c3">#65c3dd</color>
+    <color name="offer_text_c4">#ffb440</color>
+    <color name="week_indicator_bg">#F1F1F1</color>
+    <color name="frame_line">#dee1e5</color>
+    <color name="more_orange_text_v3p2">#ff4500</color>
+    <color name="transparent">#00000000</color>
+    <color name="TextColorGray">#FF505050</color>
+
+
+    <color name="selector_ratio_text_color_checked">#ffffffff</color>
+    <color name="selector_ratio_text_color_unchecked">#ff7b7b7b</color>
+    <color name="selector_text_color_focus">#fff8881a</color>
+    <color name="selector_text_color_normal">#ff7b7b7b</color>
+
+    <color name="c_7c838d">#7C838D</color>
+    <color name="c_e3e4e6">#E3E4E6</color>
+    <color name="c_7b9171">#7b9171</color>
+    <color name="c_ad8e8e">#ad8e8e</color>
+    <color name="c_fff5cb">#fff5cb</color>
+    <color name="c_ffba00">#ffba00</color>
+    <color name="c_d2d1d1">#d2d1d1</color>
+    <color name="c_fff7e0">#fff7e0</color>
+    <color name="c_ffc18d">#ffc18d</color>
+    <color name="c_d7cfc4">#d7cfc4</color>
+
+
+    <color name="member_text_hint">#FFE178</color>
+    <color name="ncg_btn_textcolor">#C2CBCC</color>
+    <color name="member_grade_growth_hint_textcolor">#bae6f4</color>
+    <color name="member_privilege_progress_color">#69BB37</color>
+    <color name="member_privilege_progress_bg_color">#FDB433</color>
+    <color name="my_eva_bg">#EFECE1</color>
+    <color name="line_bg_e9e0d1">@color/cl_50</color>
+
+
+    <color name="cm_50">#ff9000</color>
+    <color name="btnp_50">#ff6600</color>
+    <color name="cl_50">#edeadd</color>
+
+    <color name="cbg_50">#f0ede2</color>
+
+    <color name="cg_50">#96bc6e</color>
+    <color name="cb_50">#65aae9</color>
+    <color name="cr_50">#f66f57</color>
+    <color name="t1_50">#494238</color>
+    <color name="t2_50">#8b7a69</color>
+    <color name="t3_50">#beb1a9</color>
+    <color name="loading_bg">#EFECE1</color>
+    <color name="clp_501">#f9f8f2</color>
+    <color name="cbg_img_50">#26FFFFFF</color>
+    <color name="cp">@color/btnp_50</color>
+    <color name="CCFFFFFF">#CCFFFFFF</color>
+    <color name="coupon_color">#ff4500</color>
+    <color name="alpha_black">#66000000</color>
+
+
+    <color name="traveller_info_commit_enable">#ffff9000</color>
+    <color name="traveller_info_commit_unable">#4dff9000</color>
+
+
+    <color name="discount_info">#ff9000</color>
+    <color name="discount_info_title">#ff6600</color>
+    <color name="discount_info_desc">#7f7469</color>
 </resources>

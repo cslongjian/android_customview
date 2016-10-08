@@ -13,4 +13,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.ycf.chenlongjian.ycf_5_40.CompenentBtn
+            android:id="@+id/normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:longClickable="true"
+            android:layout_weight="1"/>
+
+        <com.ycf.chenlongjian.ycf_5_40.CompenentBtn
+            android:id="@+id/mianyuyue"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.ycf.chenlongjian.ycf_5_40.CompenentBtn
+            android:id="@+id/presale"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.ycf.chenlongjian.ycf_5_40.CompenentBtn
+            android:id="@+id/grouppresale"
+            android:layout_weight="1"
+            android:longClickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
 </RelativeLayout>
