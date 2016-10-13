@@ -1,0 +1,3 @@
+com/ycf/chenlongjian/ycf_hotfix/a.class:89b8a404579234fe1e2e455a37dcaec6dcf48b48
+com/ycf/chenlongjian/ycf_hotfix/b.class:e991d1bcd31900e8d4320d49744f57dcede08128
+com/ycf/chenlongjian/ycf_hotfix/MainActivity.class:c96366c60157d3056bf15167a2e00dfcbb41d817

@@ -4,6 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,6 +14,10 @@ public class MainActivity extends AppCompatActivity {
     private CompenentBtn mianyuyue;
     private CompenentBtn presale;
     private CompenentBtn grouppresale;
+    private EditText textView;
+    private Button btn;
+
+    private String html;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         normal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.w("MotionEvent","MotionEventMotionEventMotionEventMotionEventMotionEvent");
+                Log.w("onClick","onClick");
             }
         });
 
@@ -32,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         mianyuyue.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.w("MotionEvent","MotionEventMotionEventMotionEventMotionEventMotionEvent");
+                Log.w("onClick","onClick");
             }
         });
 
@@ -41,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         presale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.w("MotionEvent","MotionEventMotionEventMotionEventMotionEventMotionEvent");
+                Log.w("onClick","onClick");
             }
         });
 
@@ -50,9 +57,26 @@ public class MainActivity extends AppCompatActivity {
         grouppresale.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Log.w("MotionEvent","MotionEventMotionEventMotionEventMotionEventMotionEvent");
+                Log.w("onClick","onClick  ");
             }
         });
+
+        textView = (EditText) findViewById(R.id.edittext);
+
+        btn = (Button) findViewById(R.id.btndiolog);
+
+        btn.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                html = textView.getText().toString();
+                HDPreSaleDescriptDialog dialog = new HDPreSaleDescriptDialog(MainActivity.this, html);
+                dialog.show();
+            }
+        });
+
+
+
+
 
 
     }

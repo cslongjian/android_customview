@@ -1,32 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    >
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
     <Button
         android:id="@+id/btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="48dp"
+        android:layout_height="28dp"
         android:background="@drawable/detail_list_btn_bg"
-        android:text="预订"
         android:clickable="false"
         android:focusableInTouchMode="false"
         android:gravity="center"
+        android:text="预订"
         android:textColor="#ffffff"
-        android:textSize="14sp"
-        />
+        android:textSize="14sp" />
 
     <Button
-        android:id="@+id/mianyuyuebtn"
+        android:id="@+id/mianyuyuebtns"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="20dp"
         android:background="@drawable/detail_list_description_btn_bottom_bg"
-        android:text="免预约"
-        android:gravity="center"
-        android:textColor="#ff9000"
         android:clickable="false"
+        android:text="免预约"
+        android:textColor="#ff9000"
         android:textSize="10sp"
         android:visibility="gone" />
 
