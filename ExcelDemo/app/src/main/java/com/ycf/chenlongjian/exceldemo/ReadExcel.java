@@ -19,7 +19,8 @@ public class ReadExcel {
 
     public static void main(String[] args) {
 
-        String Path = "E:\\android_git\\android_customview\\ExcelDemo\\app\\src\\main\\java\\com\\ycf\\chenlongjian\\exceldemo\\20070920.xls";
+//        String Path = "E:\\android_git\\android_customview\\ExcelDemo\\app\\src\\main\\java\\com\\ycf\\chenlongjian\\exceldemo\\20070920.xls";
+        String Path = "E:\\android_git\\android_customview\\ExcelDemo\\app\\src\\main\\java\\com\\ycf\\chenlongjian\\exceldemo\\20071025.xls";
 
         System.out.println("测试输出");
         int Arraymark[] = new int[1100];
@@ -77,53 +78,54 @@ public class ReadExcel {
 //                }
 
 
-//                 StringBuilder stringBuilder = new StringBuilder();
+                 StringBuilder stringBuilder = new StringBuilder();
 
-//                 //------正确读取
-//                 stringBuilder.append("mZhuGeNewEventMapWithValue.put(");
-//                 stringBuilder.append(r.getCell(2).getNumericCellValue());
-//                 stringBuilder.append("L,");
-//                 stringBuilder.append("new String[] { \"");
-//                 stringBuilder.append(r.getCell(3).getStringCellValue()+"\"");
-//
-//
-//                 if (r.getCell(4).getStringCellValue()!=null&&!r.getCell(4).getStringCellValue().equals(""))
-//                 {
-//                     stringBuilder.append(",\""+r.getCell(4).getStringCellValue()+"\"");
-//                 }
-//
-//                 if (r.getCell(6).getStringCellValue()!=null&&!r.getCell(6).getStringCellValue().equals(""))
-//                 {
-//                     stringBuilder.append(",\""+r.getCell(6).getStringCellValue()+"\"");
-//                 }
-//
-//                 if (r.getCell(8).getStringCellValue()!=null&&!r.getCell(8).getStringCellValue().equals(""))
-//                 {
-//                     stringBuilder.append(",\""+r.getCell(8).getStringCellValue()+"\"");
-//                 }
-//
-//                 if (r.getCell(10).getStringCellValue()!=null&&!r.getCell(10).getStringCellValue().equals(""))
-//                 {
-//                     stringBuilder.append(",\""+r.getCell(10).getStringCellValue()+"\"");
-//                 }
-//
-//                 stringBuilder.append("});");
-//
-//                 System.out.println(stringBuilder.toString());
+//                 //------正确读取 导出MAP    注意数对。列数的位置。。
+                 stringBuilder.append("mZhuGeNewEventMapWithValue.put(");
+                 stringBuilder.append(r.getCell(2).getNumericCellValue());
+                 stringBuilder.append("L,");
+                 stringBuilder.append("new String[] { \"");
+                 stringBuilder.append(r.getCell(3).getStringCellValue()+"\"");
+
+
+                 if (r.getCell(5).getStringCellValue()!=null&&!r.getCell(5).getStringCellValue().equals(""))
+                 {
+                     stringBuilder.append(",\""+r.getCell(5).getStringCellValue()+"\"");
+                 }
+
+                 if (r.getCell(7).getStringCellValue()!=null&&!r.getCell(7).getStringCellValue().equals(""))
+                 {
+                     stringBuilder.append(",\""+r.getCell(7).getStringCellValue()+"\"");
+                 }
+
+                 if (r.getCell(9).getStringCellValue()!=null&&!r.getCell(9).getStringCellValue().equals(""))
+                 {
+                     stringBuilder.append(",\""+r.getCell(9).getStringCellValue()+"\"");
+                 }
+
+                 if (r.getCell(11).getStringCellValue()!=null&&!r.getCell(11).getStringCellValue().equals(""))
+                 {
+                     stringBuilder.append(",\""+r.getCell(11).getStringCellValue()+"\"");
+                 }
+
+                 stringBuilder.append("});");
+
+                 System.out.println(stringBuilder.toString());
 //                 //------正确读取
 //                 new String[] { "aaa" });
 
-                StringBuilder stringBuilder2 = new StringBuilder();
-                stringBuilder2.append("public static final long EVENT_ID_");
-                stringBuilder2.append(r.getCell(2).getNumericCellValue());
-                stringBuilder2.append("L=");
-                stringBuilder2.append(r.getCell(2).getNumericCellValue());
-                stringBuilder2.append("L//");
-                stringBuilder2.append(r.getCell(3).getStringCellValue());
-                 System.out.println(stringBuilder2.toString());
-
-
-//                 public static final long EVENT_ID_394 = 394;
+                //导出输出ID
+//                StringBuilder stringBuilder2 = new StringBuilder();
+//                stringBuilder2.append("public static final long ZG_EVENT_ID_");
+//                stringBuilder2.append(r.getCell(2).getNumericCellValue());
+//                stringBuilder2.append("=");
+//                stringBuilder2.append(r.getCell(2).getNumericCellValue());
+//                stringBuilder2.append(";//");
+//                stringBuilder2.append(r.getCell(3).getStringCellValue());
+//                 System.out.println(stringBuilder2.toString());
+                //输出ID
+//                public static final long EVENT_ID_394 = 394;
+//
 
 
             }
