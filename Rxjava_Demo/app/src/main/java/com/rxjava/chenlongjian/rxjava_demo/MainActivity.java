@@ -144,8 +144,13 @@ public class MainActivity extends AppCompatActivity {
             _logs.add(0, logMsg + " (main thread) ");
             _adapter.clear();
             _adapter.addAll(_logs);
+
+            Log.w("Rxjava", "主线程上"+logMsg);
+
         } else {
             _logs.add(0, logMsg + " (NOT main thread) ");
+
+            Log.w("Rxjava", "非主线程上"+logMsg);
 
             // You can only do below stuff on main thread.
             new Handler(Looper.getMainLooper()).post(new Runnable() {

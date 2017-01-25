@@ -106,8 +106,8 @@ public class ObservableCreateFragment extends Fragment implements View.OnClickLi
 
             case R.id.create:
                 mSubscription = createObservable()
-                            .subscribeOn(Schedulers.io()) //设置跑在IO线程，属于后台操作
-                            .observeOn(AndroidSchedulers.mainThread()) //设置跑在主线程，用于刷新UI
+                            .subscribeOn(Schedulers.io()) //设置被观察者启动订阅跑在IO线程，属于后台操作
+                            .observeOn(AndroidSchedulers.mainThread()) //设置观察者跑在主线程，回调用于刷新UI
                             .subscribe(getObserver());
                 //不设置的情况下，都跑在主线程中。
 //                createObserver().subscribe(subscriber);
