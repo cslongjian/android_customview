@@ -14,7 +14,20 @@
         android:layout_height="wrap_content"
         android:text="Hello World!" />
 
+    <Button
+        android:id="@+id/custom_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="custom_2"/>
+
+
+    <com.chenlongjian.widget_review.custom_ui.CustomView
+        android:id="@+id/customview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
     <ScrollView
+        android:visibility="invisible"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 

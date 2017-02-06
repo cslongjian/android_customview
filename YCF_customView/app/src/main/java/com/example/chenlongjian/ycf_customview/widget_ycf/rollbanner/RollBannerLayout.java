@@ -44,12 +44,12 @@ public class RollBannerLayout extends LinearLayout {
 
     public void bindBanner()
     {
-        mVpRollBanner.setAdapter(new ScrollBannerAdapter(getContext(), scrollBannerList));
-        mIsPalyBanner = true;
-        mRollContainer.setVisibility(View.VISIBLE);
-        mRollIndicator.setViewPager(mVpRollBanner, 0, scrollBannerList.size());
-        if (mAutoScrollHandler.hasMessages(MSG_BANNER_PLAY)) {
-            mAutoScrollHandler.removeMessages(MSG_BANNER_PLAY);
+//        mVpRollBanner.setAdapter(new ScrollBannerAdapter(getContext(), scrollBannerList));
+//        mIsPalyBanner = true;
+//        mRollContainer.setVisibility(View.VISIBLE);
+//        mRollIndicator.setViewPager(mVpRollBanner, 0, scrollBannerList.size());
+//        if (mAutoScrollHandler.hasMessages(MSG_BANNER_PLAY)) {
+//            mAutoScrollHandler.removeMessages(MSG_BANNER_PLAY);
 
     }
 

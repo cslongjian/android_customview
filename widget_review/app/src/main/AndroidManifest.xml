@@ -16,7 +16,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ListViewActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+        <activity android:name=".system_ui.ListViewActivity" android:theme="@android:style/Theme.NoTitleBar"/>
+
+
+        <activity android:name=".activity.Custom2Activity" android:theme="@android:style/Theme.NoTitleBar"/>
+
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package com.chenlongjian.widget_review;
+package com.chenlongjian.widget_review.system_ui;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -7,6 +7,8 @@ import android.view.ViewGroup;
 import android.widget.Adapter;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
+
+import com.chenlongjian.widget_review.R;
 
 /**
  * Created by chenlongjian on 16/7/3.
