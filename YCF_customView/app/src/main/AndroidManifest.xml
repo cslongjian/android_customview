@@ -36,6 +36,10 @@
             android:theme="@style/Theme.AppCompat.NoActionBar">
         </activity>
 
+        <activity android:name=".demo5_56.Demo5_56Activity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+
 
 
     </application>

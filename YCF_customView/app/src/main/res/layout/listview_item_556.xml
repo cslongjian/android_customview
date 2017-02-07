@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="头部区域 ，包含头像 名字 时间" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/question_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/head"
+        android:text="内容不符" />
+
+    <LinearLayout
+        android:id="@+id/answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/question_value">
+
+        <TextView
+            android:id="@+id/answer_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="回复位置" />
+    </LinearLayout>
+
+
+</RelativeLayout>
