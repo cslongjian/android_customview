@@ -82,7 +82,7 @@ public class CustomView_21 extends View{
         mPaint.setStrokeCap(Paint.Cap.ROUND);
 
         // 设置描边宽度
-        mPaint.setStrokeWidth(50);
+        mPaint.setStrokeWidth(100);
 
         // 生成前景图Bitmap
         fgBitmap = Bitmap.createBitmap(screenW, screenH, Bitmap.Config.ARGB_8888);

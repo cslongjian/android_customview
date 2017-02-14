@@ -21,6 +21,8 @@
 
         <activity android:name=".activity.Custom2Activity" android:theme="@android:style/Theme.NoTitleBar"/>
 
+        <activity android:name=".taiji_ui.TaijiActitivity" android:theme="@android:style/Theme.NoTitleBar"/>
+
     </application>
 
 </manifest>

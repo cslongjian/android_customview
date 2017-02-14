@@ -8,6 +8,7 @@ import android.view.View;
 import com.chenlongjian.widget_review.activity.Custom2Activity;
 import com.chenlongjian.widget_review.custom_ui.CustomView;
 import com.chenlongjian.widget_review.system_ui.ListViewActivity;
+import com.chenlongjian.widget_review.taiji_ui.TaijiActitivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        customView = (CustomView)findViewById(R.id.customview);
+        customView = (CustomView) findViewById(R.id.customview);
 
          /*
          * 开线程
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.listview).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,ListViewActivity.class);
+                Intent intent = new Intent(MainActivity.this, ListViewActivity.class);
                 startActivity(intent);
             }
         });
@@ -38,7 +39,15 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.custom_2).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,Custom2Activity.class);
+                Intent intent = new Intent(MainActivity.this, Custom2Activity.class);
+                startActivity(intent);
+            }
+        });
+
+        findViewById(R.id.taiji).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, TaijiActitivity.class);
                 startActivity(intent);
             }
         });

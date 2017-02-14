@@ -20,7 +20,8 @@ public class ReadExcel {
     public static void main(String[] args) {
 
 //        String Path = "E:\\android_git\\android_customview\\ExcelDemo\\app\\src\\main\\java\\com\\ycf\\chenlongjian\\exceldemo\\200110920.xls";
-        String Path = "E:\\android_git\\android_customview\\ExcelDemo\\app\\src\\main\\java\\com\\ycf\\chenlongjian\\exceldemo\\20170104.xls";
+//        String Path = "E:\\android_git\\android_customview\\ExcelDemo\\app\\src\\main\\java\\com\\ycf\\chenlongjian\\exceldemo\\20170104.xls";
+        String Path = "E:\\android_git\\android_customview\\ExcelDemo\\app\\src\\main\\java\\com\\ycf\\chenlongjian\\exceldemo\\20170209.xls";
 
         System.out.println("测试输出");
         int Arraymark[] = new int[1100];
